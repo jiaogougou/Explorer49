@@ -17,10 +17,10 @@ body{
 }
 /*Extra small device (phones, 60px and down) */
 @media only screen and (max-width: 600px){
-    h1{color:red}
+    
 }
 /* smal devices (portrait tables and large phones, 600px and up) */
-@media only creen and (min-width: 600px){
+@media only screen and (min-width: 600px){
     h1 {color: green}
 }
 
@@ -35,4 +35,20 @@ body{
     font-weight: 900;
     color:white;
     white-space: nowrap;
+}
+.Heading{
+    position: absolute;
+    top:680px;
+    left:200px;
+    font-size:50px;
+    font-weight:800;
+    line-height: 60px;
+}
+.ocadCard{
+    position: absolute;
+    top:873px;
+    left:230px;
+    width: 340px;
+    font-size: 30px;
+    font-weight: 600;
 }
