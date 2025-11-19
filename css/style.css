@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+.page{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height:100vh;
+}
+.backgroundImage{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+/*Extra small device (phones, 60px and down) */
+@media only screen and (max-width: 600px){
+    h1{color:red}
+}
+/* smal devices (portrait tables and large phones, 600px and up) */
+@media only creen and (min-width: 600px){
+    h1 {color: green}
+}
+
+/*here i'm gonna beign to design the size for the context*/
+/*text setting*/
+.title{
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-weight: 900;
+    color:white;
+    white-space: nowrap;
+}
