@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .bg{
     position: fixed;
     top:0;
@@ -9,7 +13,7 @@
 }
 
 .th1 {
-    position: relative; 
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -20,8 +24,8 @@
     z-index: 10; 
 }
 .th2 {
-    position: relative; 
-    top: 0;
+    position: absolute; 
+    top:110px;
     left: 0;
     width: 100%;
     height: 100px;      
@@ -36,8 +40,16 @@
     src: url(./font/Tanklager-Original.otf);
 }
 @font-face {
-    font-family: 'Milford';
-    src: url(./font/MilfordCondensed.ttf); 
+    font-family: 'MilfordCondensed';
+    src: url(./font/MilfordCondensed.ttf) format('truetype');
+}
+.fontT {
+    font-family:'tanklarger';
+    color:#462411;
+}
+.fontM {
+    font-family:'MilfordCondensed';
+    color:#462411;
 }
 
 /*text setting*/
@@ -50,15 +62,15 @@
     font-weight: 900;
     color:white;
     white-space: nowrap;
-    font-family: 'tanklarger';
 }
 .book {
     position:relative;
     width:100%;
-    margin-top: 20vh;
+    margin-top: 40vh;
     display: flex;
     justify-content: center;
 }
+/*background image "book" in two situation*/
 .b1 {
     width: 90vw;
     height:auto;
@@ -68,6 +80,7 @@
     width:90vw;
     height:auto;
 }
+/* blocks on the book*/
 .card {
     position: absolute;
     width: 28%;
@@ -82,42 +95,72 @@
     left: 43%;
     z-index: 5;    
 }
-.mi1 {
+
+/*button get started setting*/
+.button1 {
     position: absolute;
-    width: 28%;      
-    top: 65%;        
-    left: 13%;
-    z-index: 5;   
+    top: 36%;
+    left:12%;
+    padding: 12px 26px;
+    background-color:#462411;
+    color:white;
+    font-size:2vw;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border:none;
+    outline: none;
+    transition:all 0.25s ease;
 }
-.mi2 {
+.button1:hover{
+    background-color: #773D1d;
+    cursor:pointer
+}
+.button1:focus {
+    outline:4px solid white;
+    outline-offset: 4px;
+}
+.button1:active {
+    background-color: #3A0D0D;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(0.97);
+}
+/*The four mission images*/
+.mImage {
     position: absolute;
-    width: 28%;      
-    top: 63%;        
-    left: 50%;
-    z-index: 5;   
+    width: 31%;
+    z-index:5;
 }
-.mi3 {
+.mi1 { top: 63%; left: 4%;}
+.mi2 {   
     position: absolute;
-    width: 28%;      
-    top: 80%;        
-    left: 23%;
-    z-index: 5;   
+    width: 29%;
+    z-index:5; 
+    top: 61%;
+    left: 45%;
 }
-.mi4 {
+.mi3 { top: 78%; left: 23%;}
+.mi4 { top: 75%; left: 68%;}
+
+/*badges collection*/
+.mi5 {
     position: absolute;
-    width: 28%;      
-    top: 77%;        
-    left: 62%;
-    z-index: 5;   
+    width: 19%;
+    top: 56%;        
+    left: 75%;
+    z-index:5;     
+
 }
+
+
 .h1{
     position: absolute;
-    top:5%;
+    top:4%;
     left:12%;
-    font-size:3vw;
+    font-size:2.8vw;
     font-weight:800;
-    line-height: 3.2vw;
-    font-family: 'Milford';
+    line-height: 3.3vw;
 }
 .ocadCard{
     position: absolute;
@@ -142,30 +185,77 @@
     top:13%;
     left:45%;
     width:40%;
-    font-size:2vw;
+    font-size:1.8vw;
     line-height:2vw;
-    font-family: 'Milford';
     z-index: 6;
 }
 
+#missions{
+    position:absolute;
+    top:56%;
+    left:0
+}
+/*Missions to explore*/
+.h2{
+    position: absolute;
+    top: 58%;        
+    left: 10%;
+    font-size:4vw;
+    font-weight:800;
+    line-height: 3.2vw;
+}
+
+/* four missions*/
+
+.h3{
+    position:absolute;
+    top: 75%;        
+    left: 6%;
+    font-size:2.2vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+}
+.h4{
+    position:absolute;
+    top: 88%;        
+    left: 24%;
+    font-size:2.2vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+}
+.h5{
+    position:absolute;
+    top: 68%;
+    left: 53%; 
+    font-size:2.2vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+}
+.h6{
+    position:absolute;
+    top: 91%;
+    left: 76%;
+    font-size:2.2vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+}
 
 @media (max-width: 900px){
-    .b1 {
-        display:none
-    }
-    .b2 {
-        display:block;
-    }
-    .title {
-        top:-5%;
-        font-size: 5vw;
-    }
+    .b1 {display:none}
+
+    .b2 {display:block;}
+
+    .title {top:-5%;font-size: 5vw;}
+
     .h1 {
         top:2%;
-        left:12%;
-        font-size:3.5vw;
+        left:20%;
+        font-size:2.8vw;
         line-height: 4.6vw;
-        font-family: 'Milford'; 
     }
     .card {
         position: absolute;
@@ -184,9 +274,8 @@
         z-index: 6;
     }
 
-    .school {
-        font-size: 2.4vw;  
-    }
+    .school {font-size: 2.4vw;}
+
     .address {
         font-size: 2vw;
         line-height: 3vw;
@@ -208,8 +297,74 @@
         font-size:2vw;
         line-height:2vw;
         transform: translateX(-50%);
-        font-family: 'Milford';
         z-index: 6;
-}
+    }
+    /*mission to explore*/
+    .h2{
+    position: absolute;
+    top: 58%;        
+    left: 48%;
+    font-size:4vw;
+    font-weight:800;
+    transform: translateX(-50%);
+    line-height: 3.2vw;
+    }
+
+    /*four mission images*/
+    .mImage {
+    position: absolute;
+    width: 35%;
+    z-index:5;
+    }
+    .mi1 {top: 63%;left: 10%;}
+
+    .mi2 {   
+    position: absolute;
+    width: 32%;
+    z-index:5; 
+    top: 67%;
+    left: 48%;
+    }
+    .mi3 {top: 78%;left: 16%;}
+    .mi4 {top: 80%;left: 55%;}
+
+    /* four missions title*/
+    .h3{
+    position:absolute;
+    top: 70.8%;        
+    left: 13%;
+    font-size:2.4vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+    }
+    .h4{
+    position:absolute;
+    top: 85%;        
+    left: 18%;
+    font-size:2.4vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+    }
+    .h5{
+    position:absolute;
+    top: 71.7%;
+    left: 57%; 
+    font-size:2.4vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+    }
+    .h6{
+    position:absolute;
+    top: 90.5%;
+    left: 64%;
+    font-size:2.4vw;
+    font-weight:800;
+    line-height: 3.3vw;
+    z-index: 6;
+    }
+
 
 }
