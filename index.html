@@ -9,8 +9,18 @@
 
 <!--This is a common, and below is my body sction-->
 <body>
-    <div class="th1"></div>
-    <div class="th2"></div>
+    <div class="th1">
+        <div class="logo1 fontT">Abroad.Adventure</div>
+    </div>
+    <div class="th2">
+        <div class="hButtons">
+            <button class="hList hl1 ">Campust Continent</button>
+            <button class="hList hl2 ">Residential Constraction</button>
+            <button class="hList hl3 ">Wellness Oasis</button>
+            <button class="hList hl4 ">Resource Land</button>
+            <button class="hList hl5 ">Explorer Badge</button>
+        </div>
+    </div>
    <div class="page">
         <img src="./image/background.png" class="bg">
         <div class="book">
@@ -26,10 +36,6 @@
                 <br>
                 A new map is waiting for you to explore.
             </div>
-
-            <!--Here i'm trying to add a button-->
-            <a href="#missions" class="button1"> Get Started</a>
-
 
             <!--image of the blocks on the book-->
             <img src="./image/card.png" class="card">
@@ -64,11 +70,72 @@
                 Enjoy your journey, brave adventurer!
             </div>
             
-            <!--the get started button allows audience to quickly scroll down the pagfe to the "missions" section-->
-            <div id="missions"></div>
-
             <div class="h2 fontM">Missions to explore</div>
-            
+            <!--I will make four mission group, there will be a click and a panel in each one-->
+            <!--Campus Continent-->
+            <div class="missionGroup mg1">
+                <!--button-->
+                <button class="button missionBtn funtM" data-panel="panel1">Click</button>
+                <!--panel-->
+                <div class="panel panel1 fontM">
+                    •ABOUT SCHOOL
+                    <br>
+                    •MAIN BUILDING
+                </div>
+            </div>
+
+            <!--Wellness Oasis-->
+            <div class="missionGroup mg2">
+                <!--button-->
+                <button class="button missionBtn funtM" data-panel="panel2">Click</button>
+                <!--panel-->
+                <div class="panel panel2 fontM">
+                    •INSURANCE
+                    <br>
+                    •HEALTH SERVICES
+                    <br>
+                    •SAFETY
+                    <br>
+                    •PREVENTION
+                </div>
+            </div>
+            <!--Residential Construction-->
+            <div class="missionGroup mg3">
+                <!--button-->
+                <button class="button missionBtn funtM" data-panel="panel3">Click</button>
+                <!--panel-->
+                <div class="panel panel3 fontM">
+                    •ADDRESS
+                    <br>
+                    •INTERNET
+                    <br>
+                    •CONTRACT
+                    <br>
+                    •NECESSITIES
+                </div>
+            </div>            
+            <!--Resource Land-->
+            <div class="missionGroup mg4">
+                <!--button-->
+                <button class="button missionBtn funtM" data-panel="panel4">Click</button>
+                <!--panel-->
+                <div class="panel panel4 fontM">
+                    •LOCAL BANK
+                    <br>
+                    •TRANSPORTATION
+                    <br>
+                    •STUDENT DISCOUNT
+                    <br>
+                    •DATA
+                </div>
+            </div>              
+
+            <button class="button bu5 fontM">Click</button>
+            <!-- <button class="button bu1">Click</button>
+            <button class="button bu2">Click</button>
+            <button class="button bu3">Click</button>
+            <button class="button bu4">Click</button>
+            <button class="button bu5">Click</button> -->
             <!--image for the four main section-->
             <img src="./image/m1.png" class="mImage mi1">
             <img src="./image/m2.png" class="mi2">
@@ -81,13 +148,8 @@
             <div class="h5 fontM">Wellness Oasis</div>
             <div class="h6 fontM">Resource Land</div>
 
-                <!-- <div class="h3_1">Campus Continent</div>
-                <div class="h3_2">Residential Constraction</div>
-                <div class="h3_3">Wellness Oasis</div>
-                <div class="h3_4">Resource Land</div> -->
-        </div>
-        <!--The blue card on the left of the screen-->
-    
+    </div>
 
+    <script src="./web.js"></script>
 </body>
 </html>
