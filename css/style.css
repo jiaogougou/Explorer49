@@ -58,7 +58,7 @@
     cursor:pointer
 }
 .hList:focus {
-    outline:4px solid white;
+    outline:4px solid #7EC5FF;
     outline-offset: 4px;
 }
 .hList:active {

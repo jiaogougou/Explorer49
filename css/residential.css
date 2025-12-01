@@ -1,0 +1,52 @@
+.lightText{
+    color:white;
+}
+.bigP{
+    font-size: 1.8vw;
+    line-height: 2.3vw;    
+}
+.page {
+    position: relative;
+    width: 100%;
+    margin-top: 12vh;
+}
+.resTitle{
+    position: relative;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 900;
+    margin-bottom: 2vw;    
+}
+.resIntro{
+    position: relative;
+    width: 70%;
+    margin: 0 auto 4vw;
+    text-align: center;    
+}
+.resImage{
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: 0 auto 6vw;
+    border-radius: 10px;   
+}
+.paperBox{
+    position:relative;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+.paperImage{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;    
+}
+.paperT{
+    position: absolute;
+    width:80%;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: #462411;   
+}
