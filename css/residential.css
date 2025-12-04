@@ -63,13 +63,13 @@
     margin-bottom: 1vw;
 }
 .paperSub{
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 900;
     margin-bottom: 2vw;
 }
 .paperMain{
-    font-size: 1.8vw;
-    font-weight: 300;
+    font-size:1.8vw;
+    line-height:3vw;
     margin-bottom: 2.5vw;
 }
 
@@ -82,6 +82,27 @@
     justify-content: center;
     align-items: flex-start;
 }
+/* connect card left and card right*/
+.paper-content-row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.paper-content-row::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78%;
+    height: 0.35vw;
+    background-color: #462411;
+}
+
 
 /*left*/
 .paperL{
@@ -106,7 +127,7 @@
 }
 .leftC-text ol{
     font-size: 1.4vw;
-    line-height: 2vw;
+    line-height: 2.3vw;
     margin-left: 1.2vw;
 }
 
@@ -152,6 +173,15 @@
 .resShop .bigP{
     width: 80%;
     margin:0 auto;
+}
+
+.endImage{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    height :20vw;
+    transform: translateX(-50%);
+    display: block;
 }
 
 /*mobile*/
