@@ -83,23 +83,23 @@
     margin-bottom: 3vw;
 }
 
-.wellness-rightCard .leftC-bg { width: 100%; }
+.wellness-rightCard .rightC-bg { width: 100%; }
 
-.wellness-rightCard .leftC-text {
+.wellness-rightCard .rightC-text {
     position: absolute;
     width: 80%;
     top: 13%;
-    left: 56%;
+    left: 54%;
     transform: translateX(-50%);
 }
 
-.leftTi {
+.rightTi {
     font-size: 1.8vw;
     font-weight: 900;
     margin-bottom: 1vw;
 }
 
-.leftC-text ol {
+.rightC-text ol {
     font-size: 1.4vw;
     line-height: 2.3vw;
     margin-left: 1.2vw;
@@ -118,13 +118,14 @@
 .resShop{
     position: relative;
     width: 66%;
-    margin:-12vw auto -6vw;
-    padding:10vw 0.7vw;
+    margin:-6vw auto 3vw;
+    padding:5vw 7vw;
     background-color: #462411;
+
     border-top: 6px solid #462411;
     border-bottom: 6px solid #462411;
-    border-radius: 10px;
     text-align: center;
+    border-radius: 10px;
     z-index:-1;
 }
 
@@ -135,6 +136,84 @@
 }
 
 .resShop .bigP{
-    width: 80%;
+    position: relative;
+    left: -3vw;
+    width: 110%;
     margin:0 auto;
 }
+
+
+/*The second part of the information*/
+.paperBox2{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+.paperImage2{
+    position: relative;
+    width:59%;
+    left: 66%;
+    transform: translateX(-50%);
+    display: block;
+}
+.paperT2{
+    position:absolute;
+    width: 45%;
+    left: 66%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: #462411;
+}
+.paperti2 {
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+}
+
+.paperSub2 {
+    font-size: 2vw;
+    font-weight: 900;
+    margin-bottom: 2vw;
+}
+
+.paperMain2 {
+    font-size: 1.8vw;
+    line-height: 3vw;
+    margin-bottom: 2.5vw;
+}
+
+.paperC2{
+    position: absolute;
+    top: 0%;
+    right: 110%;
+    width: 80%;
+    min-height: 30vw;
+}
+.wellness-leftCard{
+    position: relative;
+    width: 100%;
+    margin-bottom: 3vw;
+}
+.wellness-leftCard .leftC-bg{
+    width: 100%;
+}
+.wellness-leftCard .leftC-text{
+    position: absolute;
+    width: 80%;
+    top: 13%;
+    left: 46%;
+    transform: translateX(-50%);
+}
+.leftTi {
+    font-size: 1.8vw;
+    font-weight: 900;
+    margin-bottom: 1vw;
+}
+
+.leftC-text ol {
+    font-size: 1.4vw;
+    line-height: 2.3vw;
+    margin-left: 1vw;
+}
+
+
