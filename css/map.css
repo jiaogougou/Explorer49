@@ -1,0 +1,145 @@
+.page {
+  position: relative;
+  width: 100%;
+  margin-top: 12vh;
+}
+
+.lightText { color: white; }
+
+.resTitle {
+  position: relative;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 900;
+  margin-bottom: 2vw;
+}
+
+/*the setting below is the map*/
+.mapBox{
+  position: relative;
+  width: 92%;
+  margin: 0 auto 6vw;
+}
+
+/* The note above the map provides space for the exit button and floor indicators.*/
+.mapTop{
+  position: relative;
+  width: 100%;
+  height: 6.2vw;
+  background: rgba(233, 211, 188, 0.9);
+  border: 6px solid #462411;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.2vw;
+  box-sizing: border-box;
+}
+.mapBack{
+  position: absolute;
+  left: 5%;
+  font-size: 2.6vw;
+  font-weight: 900;
+}
+
+.mapFloor{
+  font-size: 2.6vw;
+  font-weight: 900;
+}
+
+.mapExit{
+  position: absolute;
+  right: 4%;
+  padding: 0.7vw 1.6vw;
+  font-size: 1.8vw;
+}
+
+/*image*/
+.mapPaper{
+  position: relative;
+  width: 100%;
+}
+
+.mapImg{
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/*these are the number label for each classroom*/
+.roomL{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: 'MilfordCondensed';
+  font-weight: 900;
+  font-size: 1.9vw;
+  color: #462411;
+  user-select: none;
+}
+
+/*The locations of all classroom names in the image */
+.r615{ top: 32%; left: 14%; }
+.r616{ top: 51%; left: 14%; }
+.r617{ top: 69%; left: 14%; }
+
+.r605{ top: 25%; left: 23%; }
+.r600{ top: 25%; left: 31%; }
+.r670{ top: 25%; left: 38%; }
+.r669{ top: 25%; left: 45%; }
+.r668{ top: 25%; left: 53%; }
+.r656{ top: 25%; left: 76%; }
+
+.r654{ top: 29%; left: 86%; }
+.r652{ top: 49%; left: 86%; }
+.r650{ top: 70%; left: 86%; }
+
+.r657{ top: 46%; left: 75%; }
+.r665{ top: 49%; left: 52%; }
+
+.r642{ top: 73%; left: 76%; }
+.r620{ top: 77%; left: 26%; }
+.r623{ top: 77%; left: 34.7%; }
+.r625{ top: 77%; left: 45%; }
+.r626{ top: 77%; left: 51%; }
+.r627{ top: 77%; left: 56%; }
+
+/*buttom legend*/
+
+.legend{
+  position: relative;
+  width: 100%;
+  margin-top: 2.4vw;
+  background: rgba(233, 211, 188, 0.9);
+  border: 6px solid #462411;
+  border-radius: 14px;
+  padding: 1.2vw 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+.litem{
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  font-size: 1.6vw;
+}
+
+.licon{
+  font-size: 2vw;
+}
+
+.lswatch{
+  width: 2.2vw;
+  height: 1.4vw;
+  border: 0.28vw solid #462411;
+  border-radius: 0.4vw;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.lswatch.room{ background: rgba(70, 36, 17, 0.20); }
+.lswatch.func{ background: rgba(126, 197, 255, 0.55); }
