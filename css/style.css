@@ -291,7 +291,24 @@ cause I will add a information panel for click intract*/
     background-color: #fdfbf5;
     box-sizing: border-box;
 }
-
+.confirmName {
+    margin-top: 0.8vw;
+    padding: 0.4vw 1vw;
+    font-size: 1.2vw;
+    background-color: #462411;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.saveName{
+    margin-top: 3.6vw;
+    margin-left: 6vw;
+    font-size: 1.6vw;
+    font-weight: 900;
+    color: #462411;
+    display: none;
+}
 /*introduction on the right side*/
 .intro{
     position:absolute;
