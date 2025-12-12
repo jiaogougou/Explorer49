@@ -70,12 +70,6 @@
     margin-top: 16vh;
     border-top: 6px solid black;
 }
-/* .hl1 { top: 25px; left:10px;}
-.hl2 { top: 25px; left:240px;}
-.hl3 { top: 25px; left:50%;}
-.hl4 { top: 25px; left:60%;}
-.hl5 { top: 25px; left:70%;} */
-
 /*here i'm gonna beign to design the size for the context*/
 /*font style*/
 @font-face {
@@ -169,7 +163,7 @@
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
     transform: scale(0.97);
 }
-/*caret*/
+    /*caret*/
 .button::after{
     content:"";
     display: inline-block;
@@ -184,11 +178,10 @@
 .button.active::after {
     transform: rotate(180deg);
 }
-/* .bu1 { top: 78%; left:13%;}
-.bu2 { top: 71%; left:56%;}
-.bu3 { top: 91%; left:33%}
-.bu4 { top: 92%; left:79%;} */
-
+    /*button without caret*/
+.ncaret::after {
+    display: none !important;
+}
 /*I'm trying to re-manage the mission's information, 
 cause I will add a information panel for click intract*/
 .missionGroup {
@@ -203,7 +196,7 @@ cause I will add a information panel for click intract*/
 .bu5 {
     position: absolute; 
     top: 62%; 
-    left:78%;
+    left:79%;
 }
 
 /*information panel*/
@@ -279,6 +272,24 @@ cause I will add a information panel for click intract*/
     margin-top: 0.5vw;
     font-size: 1.2vw;
     line-height: 1.6vw;
+}
+.name{
+    margin-top: 2.7vw;
+    font-size: 1.4vw;
+    font-weight: 900;
+}
+.nameInput{
+    margin-top: 0.3vw;
+    width:60%;
+    margin-left: 4vw;
+    padding: 0.4vw 0.6vw;
+    font-size: 1.4vw;
+    font-family: 'MilfordCondensed';
+    color: #462411;
+    border: 3px solid #462411;
+    border-radius: 8px;
+    background-color: #fdfbf5;
+    box-sizing: border-box;
 }
 
 /*introduction on the right side*/
@@ -444,7 +455,7 @@ cause I will add a information panel for click intract*/
     font-size:2.4vw;
     }
     .button{
-        font-size:2.4vw;
+        font-size:2.2vw;
         padding:10px 20px;
     }
     .missionGroup {position:absolute}
@@ -454,9 +465,6 @@ cause I will add a information panel for click intract*/
     .mg3 { top: 86.7%; left:28%;}
     .mg4 { top: 92.3%; left:69%;}
 
-    .bu5 {top: 59.3%; left:79.2%;}
-
-
-
+    .bu5 {top: 59%; left:77.7%;}
 
 }
