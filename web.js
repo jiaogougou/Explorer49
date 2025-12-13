@@ -1,3 +1,6 @@
+
+//The JavaScript code language learning originates from the interaction course content in this semester's SCTM-2005.//
+
 //mission button setting//
 document.addEventListener("DOMContentLoaded",function(){
     //get all mission buttons
