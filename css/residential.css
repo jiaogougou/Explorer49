@@ -120,7 +120,7 @@
 }
 
 
-/*left*/
+/*Settings for the left card, its position, and the text on the card*/
 .paperL{
     position:relative;
     width: 32%;
@@ -147,7 +147,7 @@
     margin-left: 1.2vw;
 }
 
-/*right*/
+/*Settings for the right card, its position, and the text on the card*/
 .paperR{
     position: relative;
     width: 45%;

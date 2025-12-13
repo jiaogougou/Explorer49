@@ -51,6 +51,7 @@
     color: #462411;
 }
 
+/*different size of the content text*/
 .paperti {
     font-size: 2.5vw;
     font-weight: 900;
@@ -116,6 +117,9 @@
     width: 100%;
     border-radius: 10px;
 }
+
+/*I directly copied the settings for the tips block from the residential CSS file 
+and adjusted some values (so the naming looks odd—that's because it originally retained the previous CSS's name)*/
 .resShop{
     position: relative;
     width: 66%;
@@ -145,6 +149,8 @@
 
 
 /*The second part of the information*/
+/*Its layout is a mirror-symmetric counterpart to part1's layout, 
+so I directly reused the previous naming convention and appended the number 2 to distinguish it.*/
 .paperBox2{
     position: relative;
     width: 100%;

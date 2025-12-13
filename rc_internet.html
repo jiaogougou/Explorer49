@@ -21,12 +21,50 @@
 
     <div class="th2">
         <div class="hButtons">
-            <button class="hList hl1 ">Campust Continent</button>
-            <button class="hList hl2 ">Residential Construction</button>
-            <button class="hList hl3 ">Wellness Oasis</button>
-            <button class="hList hl4 ">Resource Land</button>
-            <button class="hList hl5 ">Explorer Badge</button>
+            <button class="hList hl1" data-hpanel="hp1" >Campus Continent</button>
+            <button class="hList hl2" data-hpanel="hp2">Residential Construction</button>
+            <button class="hList hl3 "data-hpanel="hp3">Wellness Oasis</button>
+            <button class="hList hl4 "data-hpanel="hp4">Resource Land</button>
+            <button class="hList hl5 "data-hpanel="hp5">Explorer Badge</button>
         </div>
+        <!--Add a panel to the header button. Its contents are identical to the panel in the mission section. Clicking it will navigate to the corresponding interface-->
+        <div class="hpanel hp1 fontM">
+        • ABOUT SCHOOL
+        <a href="c_map6.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•MAIN BUILDING</u></a>
+    </div>
+    <div class="hpanel hp2 fontM">
+        <a href="rc_address.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•ADDRESS</u></a>
+                    
+        <a href="rc_internet.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•INTERNET</u></a>
+                    
+        <a href="rc_contract.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•CONTRACT</u></a>
+
+        <a href="rc_necessities.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•NECESSITIES</u></a>
+    </div>
+
+    <div class="hpanel hp3 fontM">
+        <a href="w_insurance.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•INSURANCE</u></a>
+
+        <a href="w_service.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•SERVICES</u></a>
+
+        <a href="w_safety.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•SAFETY</u></a>
+  
+        <a href="w_prevention.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•PREVENTION</u></a>
+    </div>
+
+    <div class="hpanel hp4 fontM">
+        • LOCAL BANK
+
+        • TRANSPORTATION
+
+        • STUDENT DISCOUNT
+    </div>
+    <div class="hpanel hp5 fontM">
+        • BADGE COLLECTION
+
+        • ACHIEVEMENTS
+    </div>
+    
     </div>
 
     <!--Background-->
@@ -89,6 +127,7 @@
                     </div>
                 </div>
 
+                <!--right card-->
                 <div class="paperR fontM">
                     <div class="rightTi fontT">Tips</div>
                     <ol>
@@ -150,6 +189,7 @@
                         </div>
                     </div>
 
+                    <!--right card-->
                     <div class="paperR fontM">
                         <div class="rightTi fontT">Some Tips</div>
                             <ol>
@@ -200,16 +240,62 @@
         </div>
         </div>
     </div>
+    
+    <!--The footer of the page features a clickable button that opens a panel displaying links to each page.(similar as the header)-->
     <div class="th2 footerNav">
         <div class="hButtons">
-            <button class="hList hl1 ">Campust Continent</button>
-            <button class="hList hl2 ">Residential Construction</button>
-            <button class="hList hl3 ">Wellness Oasis</button>
-            <button class="hList hl4 ">Resource Land</button>
-            <button class="hList hl5 ">Explorer Badge</button>    
+            <button class="hList hl1" data-hpanel="fp1">Campus Continent</button>
+            <button class="hList hl2" data-hpanel="fp2">Residential Construction</button>
+            <button class="hList hl3" data-hpanel="fp3">Wellness Oasis</button>
+            <button class="hList hl4" data-hpanel="fp4">Resource Land</button>
+            <button class="hList hl5" data-hpanel="fp5">Explorer Badge</button>
         </div>
+
+        <!--Campus Continent-->
+        <div class="hpanel footer-panel fp1 fontM">
+            • ABOUT SCHOOL
+        <a href="c_map6.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•MAIN BUILDING</u></a>
+        </div>
+
+        <!--Residential Construction-->
+        <div class="hpanel footer-panel fp2 fontM">
+        <a href="rc_address.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•ADDRESS</u></a>
+                    
+        <a href="rc_internet.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•INTERNET</u></a>
+                    
+        <a href="rc_contract.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•CONTRACT</u></a>
+
+        <a href="rc_necessities.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•NECESSITIES</u></a>
+    </div>
+
+        <!--Wellness Oasis-->
+    <div class="hpanel footer-panel fp3 fontM">
+        <a href="w_insurance.html"style="color:#462411; text-decoration:none; font-weight:800;"><u>•INSURANCE</u></a>
+
+        <a href="w_service.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•SERVICES</u></a>
+
+        <a href="w_safety.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•SAFETY</u></a>
+  
+        <a href="w_prevention.html" style="color:#462411; text-decoration:none; font-weight:800;"><u>•PREVENTION</u></a>
+    </div>
+
+    <!--Resource Land-->
+    <div class="hpanel footer-panel fp4 fontM">
+        • LOCAL BANK
+
+        • TRANSPORTATION
+
+        • STUDENT DISCOUNT
+    </div>
+    <!--Explorer Badge-->
+    <div class="hpanel footer-panel fp5 fontM">
+        • BADGE COLLECTION
+
+        • ACHIEVEMENTS
     </div>
     
+    </div>
     
+    <script src="./web.js"></script>
 </body>
 </html>
