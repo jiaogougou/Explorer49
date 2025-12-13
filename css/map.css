@@ -66,6 +66,12 @@
   border-radius: 16px;
   box-sizing: border-box;
 }
+.mapImg2{
+  width: 100%;
+  display: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
 
 /*these are the number label for each classroom*/
 .roomL{
@@ -143,3 +149,40 @@
 
 .lswatch.room{ background: rgba(70, 36, 17, 0.20); }
 .lswatch.func{ background: rgba(126, 197, 255, 0.55); }
+
+/*mobile*/
+@media (max-width: 900px){
+
+    .mapImg {display:none}
+    .mapImg2 {display:block;}
+
+    .roomL{
+        font-weight: 900;
+        font-size: 3vw;
+    }
+    /*The locations of all classroom names in the image */
+    .r615{ top: 18%; left: 68%; }
+    .r616{ top: 18%; left: 49.6%; }
+    .r617{ top: 18%; left: 30%; }
+
+    .r605{ top: 26%; left: 76%; }
+    .r600{ top: 34%; left: 76%; }
+    .r670{ top: 39.6%; left: 76%; }
+    .r669{ top: 46%; left: 76%; }
+    .r668{ top: 54%; left: 76%; }
+    .r656{ top: 75%; left: 76%; }
+
+    .r654{ top: 83.7%; left: 73%; }
+    .r652{ top: 83.7%; left: 52%; }
+    .r650{ top: 83.7%; left: 30%; }
+
+    .r657{ top: 74%; left: 55%; }
+    .r665{ top: 52%; left: 50%; }
+
+    .r642{ top: 75%; left: 26%; }
+    .r620{ top: 29%; left: 23%; }
+    .r623{ top: 37%; left: 23%; }
+    .r625{ top: 46%; left: 23%; }
+    .r626{ top: 51.4%; left: 23%; }
+    .r627{ top: 56%; left: 23%; }
+}
